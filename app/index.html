@@ -1,12 +1,15 @@
-<!doctype html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>responsiveDemo</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<!--[if IE 9]>
+<html class="lt-ie10" lang="en" >
+<![endif]-->
+<html class="no-js" lang="en" >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <link rel="shortcut icon" href="/favicon.ico">
+	<title>Coon Cook</title>
+	<link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -15,43 +18,355 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
+	<!-- normalize.css and modernizr.js help with browser compatibility -->
+	<link rel="stylesheet" href="foundation-6/css/normalize.css">
+	<link rel="stylesheet" href="foundation-6/css/foundation.css">
+	<link rel="stylesheet" href="styles/myStyle.css">
+	<script src="foundation-6/js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+	<!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+	
+	<div class="row">
+		<ul class="left button-group">
+			<li><a href="#" class="button tiny">Home</a></li>
+			<li><a href="#" class="button tiny">About</a></li>
+			<li><a href="#" class="button tiny">Service</a></li>
+			<li><a href="#" class="button tiny">Contacts</a></li>
+		</ul>
+		<ul class="right button-group" >
+			<li><a href="#" class="button tiny">8 800 909 50 60</a></li>
+			<li><a href="#" class="button tiny">support@domain.com</a></li>
+		</ul>
+	</div>
+	
+	<div class="contain-to-grid">
+	<nav class="top-bar main-links" data-topbar>	
+		<ul class="title-area">
+			<li class="name">
+				<h1><a href="#"><img src="images/Logo.png"></a><h1>
+			</li>
+			<li class="toggle-topbar" ><a href="#"><span>menu</span></a></li>
+		</ul>
+		
 
+		<!-- menu --> 
+		<section class="top-bar-section">
+			<ul class="left">
+				<li class="has-dropdown">
+					<a href="#">Kitchen</a>
+					<ul class="dropdown">
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="#">Livnig Room</a>
+					<ul class="dropdown">
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="#">Bedroom</a>
+					<ul class="dropdown">
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="#">Children's</a>
+					<ul class="dropdown">
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown">
+					<a href="#">Textiles</a>
+					<ul class="dropdown">
+						<li><a href="#">link 1</a></li>
+						<li><a href="#">link 2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+	</nav>
+	</div>
+
+<!-- slider and img -->
+<div class="row">
+	<div class="large-6 medium-12 columns">
+		<div id="myCarousel" class="carousel" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides and content -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="images/imgCrs.png" >
+				</div>
+			
+				<div class="item">
+					<img src="http://placehold.it/600x400&text=slider img 2">
+				</div>
     
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-      </ul>
+				<div class="item">
+					<img src="http://placehold.it/600x400&text=slider img 3">
+				</div>
+			</div>
+		</div>	
     </div>
-    <p>hi</p>
+	<!-- right side img -->
+	<div class="large-6 medium-12 columns">
+		<img src="http://placehold.it/600x400&text=600x400">
+    </div>
+</div>
+<!-- end slider and img -->	
+	
+	
+<div class="row">
+	<div class="small-12 columns">
+		<h4>Kitchen utensils</h4>
+	</div>
+</div>
+ 
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+     
+ 
 
-    
+  <!-- Side menus -->
+	<div class="row">	
+        <div class="large-4 small-6 columns">
+             <div id="listCat" class="dropdown-check-list" tabindex="100">
+				<span class="anchor" >Categories</span>
+				<ul class="items">
+					<li>Tea and Coffee</li>
+					<li>Cutlery</li>
+					<li>Chopping Boards</li>
+					<li>Textile</li>
+					<li>Household Appliances</li>
+					<li>Pots</li>
+					<li>Barbecue</li>
+				</ul>
+			</div>
+	<p>
+		<div id="listColor" class="dropdown-check-list" tabindex="100">
+			<span class="anchor">Select Color</span>
+			<ul class="items">
+				<li><input type="checkbox" />Purple</li>
+				<li><input type="checkbox" />Blue</li>
+				<li><input type="checkbox" />Green</li>
+				<li><input type="checkbox" />Yellow</li>
+				<li><input type="checkbox" />Orange</li>
+				<li><input type="checkbox" />Red</li>
+				<li><input type="checkbox" />Gray</li>
+				<li><input type="checkbox" />Black</li>
+				<li><input type="checkbox" />Multicolor</li>  			
+			</ul>
+		</div>
+		</p>
+		<p>
+		<div id="listMat" class="dropdown-check-list" tabindex="100">
+			<span class="anchor">Material</span>
+			<ul class="items">
+				<li><input type="radio" />Steel</li>
+				<li><input type="radio" />Plastics</li>
+				<li><input type="radio" />Ceramics</li>
+				<li><input type="radio" />Wood</li>		
+			</ul>
+		</div>
+		</p>
+		<p>
+		<div class="dropdown-check-list" tabindex="100">
+			<span class="anchor">More Options</span>
+		</div>	
+		</p>
+		<div  id="banner">
+			<img src="images/img1.png">	
+         </div>
+		</div>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+ 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
+    <!-- End Side Bar -->
+ 
+    <!-- Thumbnails -->
+	
+        <div class="large-8 columns">
+			
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tea Infuser</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+
+ 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+
+ 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Plate of Wood</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+
+ 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+
+ 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Majlis</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+
+ 
+
+            <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Paper Lamp White</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+			
+			
+			 <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+			
+			
+			
+			 <div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tea Infuser</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+              </div>
+            </div>
+			
+			
+			
+			<div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+              </div>
+            </div>
+			
+			<div class="large-4 medium-6 small-12 columns">
+				<img src="http://placehold.it/260x200&text=Thumbnail">
+				<div class="panel" >
+					<h5>Tea Infuser</h5>
+					<p id="itemData1">Kitchen utensils</p>               
+					<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+              </div>
+            </div>
+			
+			
+			<div class="large-4 medium-6 small-12 columns">
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+			
+			
+			<div class="large-4 medium-6 small-12 columns">			
+              <img src="http://placehold.it/260x200&text=Thumbnail">
+              <div class="panel" >
+                <h5>Tray with birds</h5>
+				<p id="itemData1">Kitchen utensils</p>               
+				<p id="itemData">$4.50 <small id="oldPrice">$6.50</small></p>
+				</ul>
+              </div>
+            </div>
+		
+			
+		</div>
+	</div>
+
+    <!-- end thumbnails -->
+	
+	<div class="row">
+	
+	<!-- footer-->
+	<footer class="column">
+		<div class="icon-bar four-up">
+		<a class="item" href="#"><img src="images/clp.png"><label>Customer Loyalty Programs</label></a>
+		<a class="item"  href="#"><img src="images/ws.png"><label>Worldwide Shiping</label></a>
+		<a class="item"  href="#"><img src="images/ts.png"><label>24/7 Technical Support</label></a>
+		<a class="item"  href="#"><img src="images/re.png"><label>Returnes and Exchanges</label></a>
+		</div>
+	</footer>
+	</div>
+	
+	<!--end footer>
+
+
+<!-- include before </body> tag -->
+<script src="foundation-6/js/vendor/jquery.js"></script>
+<script src="foundation-6/js/foundation.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>
+	$(document).foundation();
+</script>
+<script src="scripts/listCategories.js"></script>
+<script src="scripts/listColors.js"></script>
+<script src="scripts/listMaterial.js"></script>
+</body>
 </html>

@@ -1,0 +1,162 @@
+#itemData{
+	margin-top:0em;
+	margin-bottom:0em;
+}
+#itemData1{
+	margin-top:0em;
+	margin-bottom:0em;
+}
+#oldPrice{
+	text-decoration: line-through;
+}
+.panel{
+	border-color:#ffffff;
+}
+.top-bar-section li a:not(.button) {
+    background:white;
+    color: black !important; 
+    }
+
+.top-bar {
+    background: white;
+	 color: black !important; 
+}
+
+.top-bar-section li a:not(.button) {
+    background: white !important; 
+		color: black;
+}
+
+.top-bar-section li a:not(.button):hover {
+    background: lightgray !important; 
+}
+
+.top-bar-section ul li.active > a {
+    background: gray !important; 
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: yellow !important;  
+ color: black;	
+}
+
+.dropdown-check-list {
+  display: inline-block;
+}
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+.dropdown-check-list.visible .anchor {
+  color: #0094ff;
+}
+.dropdown-check-list.visible .items {
+  display: block;
+}
+
+.top-bar .toggle-topbar a{
+color: black;
+}
+.top-bar.expanded .title-area {
+    background: white;
+}
+.top-bar .toggle-topbar.menu-icon a{
+	color: black ;
+}
+
+.top-bar {
+    height:90px;
+    line-height:90px;
+}
+
+.contain-to-grid {
+    background: white;
+}
+
+button, .button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 1.25rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem 1.0625rem 2rem;
+    font-size: 1rem;
+    background-color: white;
+    border-color: white;
+    color:black;
+    transition: background-color 300ms ease-out;
+}
+.dropdown-check-list {
+    display: block;
+	width:10em;
+}
+.dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+}
+
+#banner{
+margin:0 0 1.25rem;
+}
+
+.icon-bar {
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+    background: white;
+	
+}
+.icon-bar > * label {
+   color: black;
+}
+
+.column, .columns {
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+	padding-bottom:0.9375rem;
+    float: left;
+}

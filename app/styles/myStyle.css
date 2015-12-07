@@ -160,3 +160,12 @@ margin:0 0 1.25rem;
 	padding-bottom:0.9375rem;
     float: left;
 }
+
+.panel {
+    border-style: none;
+    border-color: white;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: white;
+    color: #333333;
+}
